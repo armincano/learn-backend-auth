@@ -11,12 +11,12 @@ const corsOptions = {
 app.use(cors(corsOptions));  // enable CORS
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to MigraCode Auth application." });
+  res.json({ message: "Welcome to the Ojala Auth application." });
 });
 
 app.use("/user", user);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
